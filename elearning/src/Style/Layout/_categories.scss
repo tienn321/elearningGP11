@@ -1,0 +1,28 @@
+.categories {
+    margin: $sp-4 auto;
+    h3 {
+        @include Text($h6,$fw-normal,black);
+    }
+  .categories_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $sp-1;
+    .categories_item {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        border: solid 1px $border;
+        align-items: center;
+        box-shadow: 0.5px 3px 5px $border;
+        p {
+          @include Text($regular,$fw-normal,black);
+          align-self: center;
+          margin: 0;
+        }
+        i {
+          margin: 0 $sp-2;
+          font-size: $h5;
+        }
+    }
+  }
+}

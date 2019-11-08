@@ -1,0 +1,69 @@
+.courses {
+  margin: $sp-2 auto;
+  .courses_content {
+    .course_intro {
+      margin: auto;
+      padding-top: 4rem;
+      h2 {
+        @include Text($h4, $fw-normal, black);
+      }
+      p {
+        @include Text($regular, $fw-normal, black);
+      }
+    }
+    .course_tab {
+      .nav {
+        justify-content: space-between;
+        border: none;
+        .nav-item {
+          .nav-link {
+            @include Text($medium, $fw-normal, black);
+            padding: $sp-1;
+            &:hover {
+              border: none;
+            }
+            &.active {
+              border: none;
+              border-bottom: 5px solid $blue;
+            }
+          }
+        }
+      }
+      .tab-content {
+        margin-top: $sp-2; 
+        position: relative;
+        .card-title {
+          @include Text($medium + 1, $fw-bold, black);
+        }
+        .card-text {
+          @include Text($small, $fw-normal, $grey-2);
+        }
+        .rating {
+          .rating_stars {
+            i {
+              @include Text($medium, $fw-normal, $yellow);
+            }
+          }
+          span:nth-child(2) {
+            margin: 0 $sp-1 / 2;
+            @include Text($medium, $fw-bold, $grey-2);
+          }
+          span:last-child {
+            @include Text($small, $fw-normal, $grey-2);
+          }
+        }
+        .price {
+          text-align: right;
+          .old_price {
+            @include Text($medium, $fw-normal, $grey-2);
+            text-decoration: line-through;
+            margin-right: $sp-1 / 2;
+          }
+          .new_price {
+            @include Text($regular + 2, $fw-bold, black);
+          }
+        }
+      }
+    }
+  }
+}
