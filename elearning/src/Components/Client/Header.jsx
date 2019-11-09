@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-//import logo from '/public/logoelearning.jpg'; => cái này làm không được 
-import logo from '../../../Assets/img/logoelearning.jpg'
+//import logo from '../../../Assets/img/logoelearning.jpg'
+import logo from '../../Assets/img/logoelearning.jpg';
 
 export default class Header extends Component {
   render() {

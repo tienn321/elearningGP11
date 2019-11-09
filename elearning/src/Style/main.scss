@@ -1,9 +1,11 @@
 @import './Base/_reset.scss';
 @import './Helpers/_variables.scss';
 @import './Helpers/_mixin.scss';
+@import './Helpers/_button.scss';
 @import './Layout/_header.scss';
 @import './Layout/_carousel.scss';
 @import './Layout/_courselist.scss';
 @import './Layout/_categories.scss';
 @import './Layout/_testimonial.scss';
 @import './Layout/_footer.scss';
+@import './Layout/courseItemDetail';

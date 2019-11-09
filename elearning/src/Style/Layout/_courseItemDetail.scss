@@ -1,0 +1,54 @@
+.coursedetail {
+  //margin-top: $sp-3;
+  //padding: 0 $sp-5 *3;
+  .coursedetail_title {
+    background-color: $grey;
+    padding: $sp-5*2 $sp-5*3;
+    margin: $sp-4 0;
+    h1{
+    @include Text($h4,$fw-bold,$white);
+    }
+  }
+  .coursedetail_content {
+    padding-left: $sp-5*3;
+    background-color:red;
+    padding-right: 0;
+    h3 {
+      @include Text($h5,$fw-normal,$black);
+    }
+    .coursedetail_detail{
+      padding: $sp-4;
+      @include Text($regular,$fw-normal,$black);
+    }
+    .related_course{
+      background-color: green;
+      border: solid 1px $grey-2;
+      background-color: $lightGrey-2;
+      padding: $sp-1;
+      h4{
+        padding: $sp-4 0;
+        @include Text($h5,$fw-bold,$black);
+      }
+      .related_morecourses{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $sp-1;
+      }
+    }
+  }
+  .coursedetail_card {
+    al
+    .coursedetail_card_title{
+      @include Text($h4,$fw-normal,$black)
+    }
+    .coursedetail_card_content{
+       @include Text($medium,$fw-normal,$black)
+    }
+    .coursedetail_card_btn{
+      font-size: $h6;
+      margin: 0 auto;
+      
+      display: block;
+    }
+  }
+}

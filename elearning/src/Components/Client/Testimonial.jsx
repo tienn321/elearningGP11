@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TestimonialStudent from './TestimonialStudent'
+//import TestimonialStudent from './TestimonialStudent'
 
 export default class Testimonial extends Component {
   render() {

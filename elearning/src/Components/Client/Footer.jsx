@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from '../../../Assets/img/logoelearning.jpg'
+import logo from '../../Assets/img/logoelearning.jpg'
 
 export default class Footer extends Component {
   render() {

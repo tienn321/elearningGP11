@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-export default class Carousel extends Component {
+export default class BannerCarousel extends Component {
   render() {
     return (
       <div>
         <div>
           <section className="myCover">
-            <div className="myCover_content">
+            {/* <div className="myCover_content">
               <h1>Learn on your schedule</h1>
               <p>Shape your future with experts. Courses from $13.99. Ends 9/3, 11:59 p.m. PDT.</p>
               <div className="myCover_search">
@@ -17,7 +17,7 @@ export default class Carousel extends Component {
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */}
           </section>
           {/* END cover */}
           <section className="intro">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import CourseItem from './CourseItem'
+
+import CourseListCarousel from './CourseListCarousel'
 
 export default class StudentView extends Component {
   render() {
@@ -7,12 +8,7 @@ export default class StudentView extends Component {
       <section class="student container">
         <h3>Student are viewing</h3>
         <div class="student_course owl-carousel owl-theme">
-          <CourseItem />
-          <CourseItem />
-          <CourseItem />
-          <CourseItem />
-          <CourseItem />
-          <CourseItem />
+          <CourseListCarousel/>
         </div>
         </section>
     )

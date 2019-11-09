@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import CourseItem from './CourseItem'
+//import CourseItemCard from './CourseItemCard'
+import CourseListCarousel from './CourseListCarousel'
 // import kh1 from '../../../Assets/img/kh1.jpg';
 // import kh2 from '../../../Assets/img/kh2.jpg';
 // import kh3 from '../../../Assets/img/kh3.jpg';
@@ -15,7 +16,7 @@ import CourseItem from './CourseItem'
 // import kh13 from '../../../Assets/img/kh13.jpg';
 // import kh14 from '../../../Assets/img/kh14.jpg';
 
-export default class CourseList extends Component {
+export default class CourseListTab extends Component {
   //courseArr = [kh1,kh2,kh3,kh4,kh5,kh6,kh7,kh8,kh9,kh1]
   render() {
     return (
@@ -124,106 +125,8 @@ export default class CourseList extends Component {
                   aria-labelledby="business-tab"
                 >
                   <div class="course_item owl-carousel owl-theme">
-                    {/* <div class="card">
-                      <img class="card-img-top" src="./img/kh1.jpg" alt="Card image" />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          The Data Science Course 2019: Complete Data Science Bootcamp
-                      </h4>
-                        <p class="card-text">365 Careers, 365 Careers Team</p>
-                        <div class="rating d-flex">
-                          <div class="rating_stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                          </div>
-                          <span> 4.8 </span>
-                          <span> (43028)</span>
-                        </div>
-                        <div class="price">
-                          <span class="old_price">$179.99</span>
-                          <span class="new_price">$13.79</span>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div class="card">
-                      <img class="card-img-top" src="./img/kh2.jpg" alt="Card image" />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          The Data Science Course 2019: Complete Data Science Bootcamp
-                      </h4>
-                        <p class="card-text">365 Careers, 365 Careers Team</p>
-                        <div class="rating d-flex">
-                          <div class="rating_stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                          </div>
-                          <span> 4.8 </span>
-                          <span> (43028)</span>
-                        </div>
-                        <div class="price">
-                          <span class="old_price">$179.99</span>
-                          <span class="new_price">$13.79</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="./img/kh3.jpg" alt="Card image" />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          The Data Science Course 2019: Complete Data Science Bootcamp
-                      </h4>
-                        <p class="card-text">365 Careers, 365 Careers Team</p>
-                        <div class="rating d-flex">
-                          <div class="rating_stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                          </div>
-                          <span> 4.8 </span>
-                          <span> (43028)</span>
-                        </div>
-                        <div class="price">
-                          <span class="old_price">$179.99</span>
-                          <span class="new_price">$13.79</span>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div class="card">
-                      <img class="card-img-top" src="./img/kh4.jpg" alt="Card image" />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          The Data Science Course 2019: Complete Data Science Bootcamp
-                      </h4>
-                        <p class="card-text">365 Careers, 365 Careers Team</p>
-                        <div class="rating d-flex">
-                          <div class="rating_stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                          </div>
-                          <span> 4.8 </span>
-                          <span> (43028)</span>
-                        </div>
-                        <div class="price">
-                          <span class="old_price">$179.99</span>
-                          <span class="new_price">$13.79</span>
-                        </div>
-                      </div>
-                    </div> */}
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
+                    
+                    <CourseListCarousel/>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">

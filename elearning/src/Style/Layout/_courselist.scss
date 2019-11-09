@@ -54,11 +54,11 @@
         }
         .price {
           text-align: right;
-          .old_price {
-            @include Text($medium, $fw-normal, $grey-2);
-            text-decoration: line-through;
-            margin-right: $sp-1 / 2;
-          }
+          // .old_price {
+          //   @include Text($medium, $fw-normal, $grey-2);
+          //   text-decoration: line-through;
+          //   margin-right: $sp-1 / 2;
+          // }
           .new_price {
             @include Text($regular + 2, $fw-bold, black);
           }
