@@ -4,10 +4,10 @@ import React, { Component } from 'react'
 export default class Testimonial extends Component {
   render() {
     return (
-      <section class="testimonial">
-        <div class="container">
+      <section className="testimonial">
+        <div className="container">
           <h3>What our student have to say</h3>
-           <div class="testmnl_list owl-carousel owl-theme">
+           <div className="testmnl_list owl-carousel owl-theme">
             {/*<div class="testmnl_item ">
               <div class="testmnl_person">
                 <div class="ava ava1">
@@ -90,45 +90,45 @@ export default class Testimonial extends Component {
             <TestimonialStudent />
             <TestimonialStudent /> */}
           </div> 
-          <div class="testmnl_partner">
+          <div className="testmnl_partner">
             <p>Trusted by companies of all sizes</p>
-            <div class="testmnl_partner-logo">
-              <div class="partner_logo">
+            <div className="testmnl_partner-logo">
+              <div className="partner_logo">
                 <img src="./img/booking.svg" />
               </div>
 
-              <div class="partner_logo">
+              <div className="partner_logo">
                 <img src="./img/volkswagen.svg" />
               </div>
 
-              <div class="partner_logo">
+              <div className="partner_logo">
                 <img src="./img/mercedes.svg" />
               </div>
 
-              <div class="partner_logo">
+              <div className="partner_logo">
                 <img src="./img/pinterest.svg" />
               </div>
 
-              <div class="partner_logo">
+              <div className="partner_logo">
                 <img src="./img/adidas.svg" />
               </div>
 
-              <div class="partner_logo">
+              <div className="partner_logo">
                 <img src="./img/paypal.svg" />
               </div>
             </div>
 
-            <div class="testmnl_coop">
-              <div class="testmnl_coop-item teacher">
+            <div className="testmnl_coop">
+              <div className="testmnl_coop-item teacher">
                 <h4>Teach on Udemy</h4>
                 <p>Teach what you love. Udemy gives you the tools to create an online course.</p>
-                <button class="btn btn--red">Starteaching</button>
+                <button className="btn btn--red">Starteaching</button>
               </div>
 
-              <div class="testmnl_coop-item">
+              <div className="testmnl_coop-item">
                 <h4>Udemy for Business</h4>
                 <p>Get unlimited access to 3,500+ of Udemy’s top courses for your team.</p>
-                <button class="btn btn--red">Get Udemy for Business</button>
+                <button className="btn btn--red">Get Udemy for Business</button>
               </div>
             </div>
           </div>

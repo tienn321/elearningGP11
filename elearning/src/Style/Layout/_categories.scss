@@ -5,7 +5,7 @@
     }
   .categories_list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: $sp-1;
     .categories_item {
         display: flex;

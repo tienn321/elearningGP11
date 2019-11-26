@@ -1,50 +1,71 @@
 import React, { Component } from 'react'
-
+import CategoryItem from './CategoryItem'
+import CategoryItemContainer from './CategoryItemContainer'
+import CourseService from '../../Store/Services/course';
 export default class Categories extends Component {
-  render() {
-    return (
-      <section class="container categories">
-        <h3>Top categories</h3>
-        <div class="categories_list">
-          <div class="categories_item">
-            <i class="far fa-window-maximize"></i>
-            <p>Development</p>
-          </div>
+  constructor(props) {
+    super(props)
+    this.state = {
+      categoryList: [],
+    }
+  }
+  componentDidMount() {
+    this.getCategoryList();
+  }
 
-          <div class="categories_item">
-            <i class="far fa-chart-bar"></i>
+  getCategoryList = () => {
+    CourseService.getCategory()
+      .then((result) => {
+        this.setState({
+          categoryList: result.data
+        },
+        )
+      })
+      .catch((err) => console.log(err.message))
+  }
+  renderCategory = () => {
+    return this.state.categoryList.map((category, index) => {
+      return <CategoryItemContainer
+        category={category.tenDanhMuc}
+        key={index}
+        
+      />
+
+    })
+  }
+  render() {
+    
+    return (
+      <section className="container categories">
+        <h3>Top categories</h3>
+        <div className="categories_list">
+          {this.renderCategory()}
+          {/* <CategoryItemContainer category={this.state.categoryList}/> */}
+
+          {/* <div className="categories_item">
+            <i className="far fa-chart-bar"></i>
             <p>Business</p>
           </div>
 
-          <div class="categories_item">
-            <i class="fas fa-tv"></i>
+          <div className="categories_item">
+            <i className="fas fa-tv"></i>
             <p>IT & Software</p>
           </div>
 
-          <div class="categories_item">
-            <i class="fas fa-pencil-ruler"></i>
+          <div className="categories_item">
+            <i className="fas fa-pencil-ruler"></i>
             <p>Design</p>
           </div>
 
-          <div class="categories_item">
-            <i class="fas fa-bullseye"></i>
+          <div className="categories_item">
+            <i className="fas fa-bullseye"></i>
             <p>Marketing</p>
           </div>
 
-          <div class="categories_item">
-            <i class="fa fa-book"></i>
-            <p>Personal Development</p>
-          </div>
-
-          <div class="categories_item">
-            <i class="fas fa-camera"></i>
-            <p>Photography</p>
-          </div>
-
-          <div class="categories_item">
-            <i class="fas fa-music"></i>
+          <div className="categories_item">
+            <i className="fas fa-music"></i>
             <p>Music</p>
-          </div>
+          </div> */}
         </div>
       </section>
     )

@@ -1,16 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import CourseListCarousel from './CourseListCarousel'
+import CourseListCarouselAll from './CourseListCarouselAll'
 
-export default class StudentView extends Component {
+class StudentView extends Component {
   render() {
     return (
-      <section class="student container">
+      <section className="student container">
         <h3>Student are viewing</h3>
-        <div class="student_course owl-carousel owl-theme">
-          <CourseListCarousel/>
+        <div className="student_course owl-carousel owl-theme">
+          <CourseListCarouselAll cardPerRow={6}/>
         </div>
         </section>
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    courseListAll: state.CourseListReducer
+  };
+}
+
+export default connect(mapStateToProps, null)(StudentView)

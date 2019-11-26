@@ -6,7 +6,7 @@ import CourseItemPage from './CourseItemPage';
 import NotFoundPage from './NotFoundPage';
 //Router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CourseItemDetail from '../Components/Client/CourseItemDetail';
+// import CourseItemDetail from '../Components/Client/CourseItemDetail';
 
 
 

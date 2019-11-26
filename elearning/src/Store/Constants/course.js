@@ -1,0 +1,4 @@
+export const GET_COURSES = "GET_COURSES";
+export const COURSE_DETAIL = "COURSE_DETAIL";
+export const GET_CATEGORY = "GET_CATEGORY";
+export const COURSES_BY_CATEGORY = "COURSES_BY_CATEGORY";

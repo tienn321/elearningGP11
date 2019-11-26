@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import Header from '../Components/Client/Header';
 import BannerCarousel from '../Components/Client/BannerCarousel';
 //import CourseListCarousel from '../Components/Client/CourseListCarousel';
@@ -7,8 +8,13 @@ import StudentView from '../Components/Client/StudentView';
 import Categories from '../Components/Client/Categories';
 import Testimonial from '../Components/Client/Testimonial'
 import Footer from '../Components/Client/Footer';
-export default class HomePage extends Component {
+
+//import other methods
+import { connect } from 'react-redux';
+//import CourseService from '../Store/Services/course';
+class HomePage extends Component {
   render() {
+    
     return (
       <div>
         <Header />
@@ -23,3 +29,10 @@ export default class HomePage extends Component {
     )
   }
 }
+// const mapStateToProps = (state) => {
+//   return {
+//     courseList: state.CourseListReducer
+//   };
+// }
+
+export default (HomePage)
