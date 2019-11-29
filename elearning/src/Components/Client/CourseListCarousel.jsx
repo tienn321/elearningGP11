@@ -68,15 +68,17 @@ class CourseListCarousel extends Component {
   render() {   
     //render dư liệu hiện ra
     console.log('ds in ra',this.state.theList)
-    const elmItem = this.state.theList.map((course,index) => <CourseItemCard key={index} course={course}/> )
+    const elmItem = this.state.theList.map((course, index) => <CourseItemCard key={index} course={course}/> )
 
     let settings = {
       dots: false,
-      infinite: false,
-      speed: 500,
+      infinite: true,
+      //speed: 500,
       slidesToShow: this.props.cardPerRow,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       initialSlide: 0,
+      //variableWidth: true,
+      //centerMode: true,
       nextArrow: <NextArrow />,
       prevArrow: <PrevArrow/>,
       responsive: [

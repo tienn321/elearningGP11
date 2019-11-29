@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export default class BannerCarousel extends Component {
   render() {
     return (
-      <div>
-        <div>
+      
+        <div className="mb-5">
           <section className="myCover">
             {/* <div className="myCover_content">
               <h1>Learn on your schedule</h1>
@@ -25,22 +25,22 @@ export default class BannerCarousel extends Component {
               <div className="col-md-4 intro_item">
                 <i className="fa fa-bullseye intro_icon" />
                 <div className="icon_content">
-                  <p>80,000 online courses</p>
-                  <p>Explore a variety of fresh topic</p>
+                  <p>Tài liệu phong phú</p>
+                  <p>Chia sẻ kho tài liệu học tập miễn phí, hữu ích với nhiều lĩnh vực phong phú.</p>
                 </div>
               </div>
               <div className="col-md-4 intro_item">
                 <i className="fa fa-spinner intro_icon" />
                 <div className="icon_content">
-                  <p>Expert instruction</p>
-                  <p>Find the right instructor for you</p>
+                  <p>Lộ trình đầy đủ</p>
+                  <p>Học theo định hướng sẽ giúp bạn tự tin trước khi bắt đầu con đường sự nghiệp</p>
                 </div>
               </div>
               <div className="col-md-4 intro_item">
                 <i className="fa fa-history intro_icon" />
                 <div className="icon_content">
-                  <p>Lifetime access</p>
-                  <p>Learn on your schedule</p>
+                  <p>Hỗ trợ 24/7</p>
+                  <p>Nhóm chat với hàng ngàn thành viên thân thiện giúp đỡ nhau</p>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default class BannerCarousel extends Component {
           {/* END intro */}
         </div>
 
-      </div>
+      
     )
   }
 }

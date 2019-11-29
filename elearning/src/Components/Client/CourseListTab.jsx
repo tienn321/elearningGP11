@@ -90,10 +90,7 @@ class CourseListTab extends Component {
         <div className="container courses_content">
           <div className="row">
             <div className="col-md-3 course_intro">
-              <h2>The world’s largest selection of courses</h2>
-              <p>
-                CHỖ NÀY MUỐN VIẾT GÌ VIẾT
-            </p>
+              <h2>CHỌN KHÓA HỌC TỐT NHẤT CHO BẠN</h2> 
             </div>
 
             <div className="col-md-9 course_tab">

@@ -14,11 +14,11 @@ export default class Header extends Component {
               </a>
               <div className="myNavBar_categories">
                 <i className="fa fa-th  mx-2" />
-                Categories
+                Danh mục khóa học
               </div>
               <div className="myNavBar_search">
                 <form className="input-group ">
-                  <input type="text" className="form-control" placeholder="Search for anything" />
+                  <input type="text" className="form-control" placeholder="Tìm khóa học bạn đang quan tâm tại đây..." />
                   <div className="input-group-append">
                     <span className="btn input-group-text"><i className="fa fa-search" /></span>
                   </div>
@@ -42,8 +42,8 @@ export default class Header extends Component {
                 </li>
                 <li className="nav-item ">
                   <div className="button d-flex">
-                    <button className="btn mr-1 btn--white" type="submit">Log In</button>
-                    <button className="btn btn--red" type="submit">Sign Up</button>
+                    <button className="btn mr-1 btn--white" type="submit">Đăng nhập</button>
+                    <button className="btn btn--red" type="submit">Đăng ký</button>
                   </div>
                 </li>
               </ul>

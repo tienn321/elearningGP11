@@ -6,6 +6,7 @@
       padding-top: 4rem;
       h2 {
         @include Text($h4, $fw-normal, black);
+        margin: auto 0;
       }
       p {
         @include Text($regular, $fw-normal, black);
@@ -32,35 +33,30 @@
       .tab-content {
         margin-top: $sp-2; 
         position: relative;
+        // .courseitem_card {
+        //   width: 300px;
+        //   margin: $sp-1;
+        // }
+        // .courseitem_card_img {
+          
+        // }
         .card-title {
-          @include Text($medium + 1, $fw-bold, black);
+          @include Text($regular, $fw-bold, black);
         }
         .card-text {
           @include Text($small, $fw-normal, $grey-2);
         }
-        .rating {
-          .rating_stars {
-            i {
-              @include Text($medium, $fw-normal, $yellow);
-            }
-          }
-          span:nth-child(2) {
-            margin: 0 $sp-1 / 2;
-            @include Text($medium, $fw-bold, $grey-2);
-          }
+        .rating {          
           span:last-child {
-            @include Text($small, $fw-normal, $grey-2);
+            @include Text($medium, $fw-normal, $grey-2);
           }
         }
         .price {
           text-align: right;
-          // .old_price {
-          //   @include Text($medium, $fw-normal, $grey-2);
-          //   text-decoration: line-through;
-          //   margin-right: $sp-1 / 2;
-          // }
+         
           .new_price {
-            @include Text($regular + 2, $fw-bold, black);
+            @include Text($regular + 2, $fw-normal, $white);
+            width: 100%;
           }
         }
       }

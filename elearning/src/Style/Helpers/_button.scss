@@ -1,5 +1,5 @@
 .btn--white{
-    @include button($grey, 700, $white, $sp-1 - 3, 0, black,$grey,$lightGrey);
+    @include button($grey, 700, $white, $sp-1 - 3, $sp-1, black,$grey,$lightGrey);
     // border: 1px solid $grey;
 }
 .btn--red {
