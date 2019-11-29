@@ -21,7 +21,7 @@ export default class CourseItemCard extends Component {
           </div>
           <div className="price">
             {/* <span className="old_price">GHI DANH</span> */}
-            <span className="new_price">ghi danh</span>
+            <span className="new_price">GHI DANH</span>
           </div>
         </div>
       </div>
