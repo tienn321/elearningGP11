@@ -67,7 +67,7 @@ class CourseListCarousel extends Component {
  
   render() {   
     //render dư liệu hiện ra
-    console.log('ds in ra',this.state.theList)
+    //console.log('ds in ra',this.state.theList)
     const elmItem = this.state.theList.map((course,index) => <CourseItemCard key={index} course={course}/> )
 
     let settings = {

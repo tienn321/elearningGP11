@@ -5,28 +5,35 @@ export default class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <div className="footer_head">
-          {/* <div class="footer_menu"> */}
-          <ul className="footer_menu">
-            <li> <a href='#123' ><strong> Udemy for Business </strong></a></li>
-            <li> <a href='#123' > Careers</a></li>
-            <li> <a href='#123' > Sitemap</a></li>
-            <li> <a href='#123' ><strong> Teach on Udemy</strong></a></li>
-            <li> <a href='#123' > Blog</a></li>
-            <li> <a href='#123' > Popular courses</a></li>
-            <li> <a href='#123' > Udemy app</a></li>
-            <li> <a href='#123' > Help and Support</a></li>
-            <li> </li>
-            <li> <a href='#123' > About us</a></li>
-            <li> <a href='#123' > Affiliate</a></li>
-            <li> <a href='#123' > </a></li>
-          </ul>
-          {/* </div> */}
-          <div className="footer_language">
-            <i className="fa fa-globe" aria-hidden="true" />
-            <p>English</p>
-            <i className="fa fa-angle-up" />
+        <div className="footer_head container">
+          <div className="footer_title">
+            <h4>E-Learning Teaching</h4>
+            <p>Hệ thống đào tạo lập trình chuyên sâu và ứng dụng theo dự án thực tế.<br/>
+            459 Sư Vạn Hạnh – Quận 10 <br/>
+            Phone: 096.105.1014<br/>
+            Fax: 098.407.5835<br/>
+            Mail: passion@gmail.com
+            </p>
           </div>
+          
+          <div>
+            <h4>Tin tức khuyến mãi</h4>
+            <p>
+              E-learing sẽ gởi các khóa học trực tuyến & các chương trình hoàn toàn MIỄN PHÍ và KHUYẾN MÃI hấp dẫn đến các bạn.
+            </p>
+            
+          </div>
+          <div>
+            <h4> </h4>
+            <div className="input-group mb-3">
+              <input type="text" className="form-control" placeholder="Email..." aria-describedby="basic-addon2"/>
+                <div className="input-group-append">
+                  <button className="input-group-text" id="basic-addon2">Đăng ký</button>
+                </div>
+            </div>
+          </div>
+          
+         
         </div>
         <div className="footer_end">
           <div className="copyright">

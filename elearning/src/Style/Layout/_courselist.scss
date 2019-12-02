@@ -19,6 +19,8 @@
           .nav-link {
             @include Text($medium, $fw-normal, black);
             padding: $sp-1;
+            background-color: $white;
+            outline: none;
             &:hover {
               border: none;
             }
@@ -32,8 +34,19 @@
       .tab-content {
         margin-top: $sp-2; 
         position: relative;
-        .card-title {
-          @include Text($medium + 1, $fw-bold, black);
+        .card_img {
+          // width: 300px;
+          // height: 200px;
+          img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            overflow: hidden;
+          }
+        }
+         .card-title {
+          @include Text($regular + 1, $fw-bold, black);
+          text-transform: uppercase;
         }
         .card-text {
           @include Text($small, $fw-normal, $grey-2);
@@ -54,13 +67,15 @@
         }
         .price {
           text-align: right;
-          // .old_price {
-          //   @include Text($medium, $fw-normal, $grey-2);
-          //   text-decoration: line-through;
-          //   margin-right: $sp-1 / 2;
-          // }
+          display: flex;
+          justify-content: space-between;
+          
           .new_price {
-            @include Text($regular + 2, $fw-bold, black);
+            //@include Text($medium + 2, $fw-bold, black);
+            font-size: 14px;
+            padding: $sp-1/2;
+            margin: $sp-1 $sp-1/2;
+            //border-radius: 10%;
           }
         }
       }

@@ -1,43 +1,44 @@
 .footer {
     .footer_head {
-        display: flex;
-        justify-content: space-between;
-        padding: $sp-5 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: $sp-2;
         .footer_menu {
-            width: 60%;
+            
             text-align: left;
             display: grid;
             grid-template-columns: repeat(3,1fr);
             
-            list-style-type: none;
+            //list-style-type: none;
             padding: 0 $sp-4;
-            li {
-                margin: $sp-1 /2 0;
-                a {
-                  text-decoration: none;
-                  @include Text($medium,$fw-normal,$blue); 
-                }
-            }
+            // li {
+            //     margin: $sp-1 /2 0;
+            //     a {
+            //       text-decoration: none;
+            //       @include Text($medium,$fw-normal,$blue); 
+            //     }
+            // }
         }
-        .footer_language {
-            // width: 10%;
-            text-align: right;
-            padding: $sp-1 $sp-4;
-            display: flex;
-            border: solid 1px black;
-            height: fit-content;
-            margin: 0 $sp-3;
-            i {
-                align-self: center;
-            }
-            p {
-                @include Text($medium,$fw-normal,black);
-                margin: 0;
-                margin-right: $sp-5;
-                margin-left: $sp-1; 
+        // .footer_language {
+        //     // width: 10%;
+        //     text-align: right;
+        //     padding: $sp-1 $sp-4;
+        //     display: flex;
+        //     border: solid 1px black;
+        //     height: fit-content;
+        //     margin: 0 $sp-3;
+        //     i {
+        //         align-self: center;
+        //     }
+        //     p {
+        //         @include Text($medium,$fw-normal,black);
+        //         margin: 0;
+        //         margin-right: $sp-5;
+        //         margin-left: $sp-1; 
 
-            }
-        }
+        //     }
+        // }
     }
     .footer_end {
         padding: $sp-5 $sp-3;

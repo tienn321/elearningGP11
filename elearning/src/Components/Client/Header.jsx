@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 //import logo from '../../../Assets/img/logoelearning.jpg'
+//import { NavLink } from "react-router-dom";
 import logo from '../../Assets/img/logoelearning.jpg';
 
 export default class Header extends Component {
@@ -14,11 +15,11 @@ export default class Header extends Component {
               </a>
               <div className="myNavBar_categories">
                 <i className="fa fa-th  mx-2" />
-                Categories
+                Tất cả khóa học
               </div>
               <div className="myNavBar_search">
                 <form className="input-group ">
-                  <input type="text" className="form-control" placeholder="Search for anything" />
+                  <input type="text" className="form-control" placeholder="Tìm khóa học bạn quan tâm..." />
                   <div className="input-group-append">
                     <span className="btn input-group-text"><i className="fa fa-search" /></span>
                   </div>
@@ -31,19 +32,14 @@ export default class Header extends Component {
           <div className="col-xl-4 col-lg-3 col-md-4 col-sm-4">
             <div className="collapse navbar-collapse" id="collapsibleNavId">
               <ul className="navbar-nav">
-                {/* <li className="nav-item">
-                  <a className="nav-link business" href="index.html">Udemy for business</a>
-                </li>
-                <li className="nav-item instructor">
-                  <a className="nav-link" href="index.html">Teach on Udemy</a>
-                </li> */}
+               
                 <li className="nav-item">
                   <i className="fa fa-shopping-cart" />
                 </li>
                 <li className="nav-item ">
                   <div className="button d-flex">
-                    <button className="btn mr-1 btn--white" type="submit">Log In</button>
-                    <button className="btn btn--red" type="submit">Sign Up</button>
+                    <button className="btn mr-1 btn--white" type="submit">Đăng nhập</button>
+                    <button className="btn btn--red" type="submit">Đăng ký</button>
                   </div>
                 </li>
               </ul>

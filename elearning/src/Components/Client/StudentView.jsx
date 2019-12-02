@@ -9,7 +9,7 @@ class StudentView extends Component {
       <section className="student container">
         <h3>Student are viewing</h3>
         <div className="student_course owl-carousel owl-theme">
-          <CourseListCarouselAll cardPerRow={6}/>
+          <CourseListCarouselAll cardPerRow={5}/>
         </div>
         </section>
     )

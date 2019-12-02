@@ -25,22 +25,22 @@ export default class BannerCarousel extends Component {
               <div className="col-md-4 intro_item">
                 <i className="fa fa-bullseye intro_icon" />
                 <div className="icon_content">
-                  <p>80,000 online courses</p>
-                  <p>Explore a variety of fresh topic</p>
+                  <p>MỤC TIÊU ĐI ĐẦU</p>
+                  <p>Cụ thể hóa mục tiêu dành cho từng chặng phát triển của bạn</p>
                 </div>
               </div>
               <div className="col-md-4 intro_item">
                 <i className="fa fa-spinner intro_icon" />
                 <div className="icon_content">
-                  <p>Expert instruction</p>
-                  <p>Find the right instructor for you</p>
+                  <p>LỘ TRÌNH RÕ RÀNG</p>
+                  <p>Phát triển năng lực và niềm đam mê cảm hứng học tập trong bạn</p>
                 </div>
               </div>
               <div className="col-md-4 intro_item">
                 <i className="fa fa-history intro_icon" />
                 <div className="icon_content">
-                  <p>Lifetime access</p>
-                  <p>Learn on your schedule</p>
+                  <p>HỖ TRỢ LIÊN TỤC</p>
+                  <p>Nhóm chat với hàng ngàn thành viên thân thiện giúp đỡ nhau</p>
                 </div>
               </div>
             </div>

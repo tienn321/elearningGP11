@@ -37,7 +37,7 @@ export default class Categories extends Component {
     
     return (
       <section className="container categories">
-        <h3>Top categories</h3>
+        <h3>Danh mục khóa học đang cung cấp</h3>
         <div className="categories_list">
           {this.renderCategory()}
           {/* <CategoryItemContainer category={this.state.categoryList}/> */}

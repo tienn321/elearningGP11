@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-//import TestimonialStudent from './TestimonialStudent'
+import TestimonialStudent from './TestimonialStudent'
 
 export default class Testimonial extends Component {
   render() {
     return (
       <section className="testimonial">
         <div className="container">
-          <h3>What our student have to say</h3>
-           <div className="testmnl_list owl-carousel owl-theme">
-            {/*<div class="testmnl_item ">
+          <h3>Học viên của chúng tôi</h3>
+           {/* <div className="testmnl_list owl-carousel owl-theme">
+            <div class="testmnl_item ">
               <div class="testmnl_person">
                 <div class="ava ava1">
-                  <!-- <img src="./img/person1.jpg" alt="" /> -->
+                   <img src="./img/person1.jpg" alt="" /> 
               </div>
                 <p class="name">Borivoje</p>
               </div>
@@ -24,7 +24,7 @@ export default class Testimonial extends Component {
             <div class="testmnl_item ">
               <div class="testmnl_person">
                 <div class="ava ava2">
-                  <!-- <img src="./img/person2.jpg" alt="" /> -->
+                   <img src="./img/person2.jpg" alt="" /> 
               </div>
                 <p class="name">Dipesh</p>
               </div>
@@ -50,7 +50,7 @@ export default class Testimonial extends Component {
             <div class="testmnl_item ">
               <div class="testmnl_person">
                 <div class="ava ava4">
-                  <!-- <img src="./img/person4.jpg" alt="" /> -->
+                   <img src="./img/person4.jpg" alt="" /> 
               </div>
                 <p class="name">Zulaika</p>
               </div>
@@ -64,7 +64,7 @@ export default class Testimonial extends Component {
             <div class="testmnl_item ">
               <div class="testmnl_person">
                 <div class="ava ava5">
-                  <!-- <img src="./img/person5.jpg" alt="" /> -->
+                   <img src="./img/person5.jpg" alt="" /> 
               </div>
                 <p class="name">Marco</p>
               </div>
@@ -85,11 +85,12 @@ export default class Testimonial extends Component {
                 The best part about Udemy is the selection. You can find a course for anything you
                 want to learn!
             </p>
-            </div> */}
-            {/* <TestimonialStudent />
-            <TestimonialStudent />
-            <TestimonialStudent /> */}
-          </div> 
+            </div>
+            
+           
+          </div>  */}
+          <TestimonialStudent />
+{/*           
           <div className="testmnl_partner">
             <p>Trusted by companies of all sizes</p>
             <div className="testmnl_partner-logo">
@@ -131,7 +132,7 @@ export default class Testimonial extends Component {
                 <button className="btn btn--red">Get Udemy for Business</button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     )
