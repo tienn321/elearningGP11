@@ -1,0 +1,23 @@
+.courselist_page{
+  height: 150px;
+  position: relative;
+  .courselist_title {
+    @include Text($h3, $fw-bold, $white);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+  
+}
+.courselist_body{
+    width: 90%;
+    margin: $sp-5 auto $sp-5*3;
+    .courselist_category {
+      p:first-child{
+       //text-decoration: underline;
+        @include Text($h4, $fw-normal, $blue);
+        margin-top: $sp-4;
+      }
+    }
+  }

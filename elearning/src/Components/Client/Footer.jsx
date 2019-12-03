@@ -9,10 +9,10 @@ export default class Footer extends Component {
           <div className="footer_title">
             <h4>E-Learning Teaching</h4>
             <p>Hệ thống đào tạo lập trình chuyên sâu và ứng dụng theo dự án thực tế.<br/>
-            459 Sư Vạn Hạnh – Quận 10 <br/>
-            Phone: 096.105.1014<br/>
-            Fax: 098.407.5835<br/>
-            Mail: passion@gmail.com
+            376 Võ Văn Tần – Quận 3 <br/>
+            Phone: 123.345.6789<br/>
+              Fax: 123.345.6789<br/>
+            Mail: abc@xyz.com
             </p>
           </div>
           

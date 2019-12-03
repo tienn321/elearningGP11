@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 //import logo from '../../../Assets/img/logoelearning.jpg'
-//import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import logo from '../../Assets/img/logoelearning.jpg';
 
-export default class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <header className="container-fluid myNavBar">
@@ -13,10 +13,10 @@ export default class Header extends Component {
               <a className="navbar-brand" href="#index.html">
                 <img src={logo} alt="Logo Udemy" />
               </a>
-              <div className="myNavBar_categories">
+              <NavLink className="myNavBar_categories" to='/all-courses'>
                 <i className="fa fa-th  mx-2" />
                 Tất cả khóa học
-              </div>
+              </NavLink>
               <div className="myNavBar_search">
                 <form className="input-group ">
                   <input type="text" className="form-control" placeholder="Tìm khóa học bạn quan tâm..." />
@@ -55,3 +55,4 @@ export default class Header extends Component {
     )
   }
 }
+export default withRouter(Header)

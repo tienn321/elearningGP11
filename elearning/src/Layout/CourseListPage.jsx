@@ -32,9 +32,10 @@ class CourseListPage extends Component {
 
   renderCategory = () => {
     return this.state.categoryList.map((category, index) => {
-      return <CategoryItem category={category.tenDanhMuc} key={index}>
+      return <div className="courselist_category"><CategoryItem category={category.tenDanhMuc} key={index}> 
         <CourseListCarousel cardPerRow={4} activeCategory={category.maDanhMuc} />
       </CategoryItem>
+      </div>
       
     })
   }
@@ -43,14 +44,15 @@ class CourseListPage extends Component {
 
   render() {
     return (
-      <div>
-        <section className="intro course-list-page">
-          <h2 className='courselist_title'>ALL COURSE</h2>
-        </section>
-        {this.renderCategory()}
-       
+      <>
+        <div className="intro courselist_page">
+          <h2 className='courselist_title'>TẤT CẢ KHÓA HỌC TẠI TRUNG TÂM</h2>
+        </div>
+        <div className="courselist_body">
+          {this.renderCategory()}
+        </div>
         
-      </div>
+      </>
     )
   }
 }

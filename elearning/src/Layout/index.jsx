@@ -6,6 +6,7 @@ import CourseItemPage from './CourseItemPage';
 import NotFoundPage from './NotFoundPage';
 //Router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import PageCommon from '../Components/Client/PageCommon';
 // import CourseItemDetail from '../Components/Client/CourseItemDetail';
 
 
@@ -13,12 +14,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const Layout = () => {
   return (
     <Router>
-      <Switch>
-        <Route path='/' exact component={HomePage} />
-        <Route path='/all-courses' exact component={CourseListPage} />
-        <Route path='/course/:id' exact component={CourseItemPage} />
-        <Route path='' exact={false} component={NotFoundPage} />
-      </Switch>
+      
+
+      <PageCommon>
+        <Switch>
+          <Route path='/' exact component={HomePage} />
+          <Route path='/all-courses' exact component={CourseListPage} />
+          <Route path='/course/:id' exact component={CourseItemPage} />
+          <Route path='' exact={false} component={NotFoundPage} />
+        </Switch>
+      </PageCommon>
+      
     </Router>
   );
 };

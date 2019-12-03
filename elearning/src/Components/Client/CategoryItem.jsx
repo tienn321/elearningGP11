@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function CategoryItem(props) {
   return (
-    <React.Fragment>
-     {props.category}
+    <>
+      <p>{props.category} </p>
       {props.children}
-    </React.Fragment>)
+    </>)
   }
