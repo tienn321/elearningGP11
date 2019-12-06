@@ -1,53 +1,100 @@
 .coursedetail {
-  //margin-top: $sp-3;
-  //padding: 0 $sp-5 *3;
+  
   .coursedetail_title {
-    background-color: $grey;
-    padding: $sp-5*2 $sp-5*3;
-    margin: $sp-4 0;
+    background-color: $grey-2;
+    padding: $sp-5 $sp-5*3;
+    //margin: $sp-4 0;
     h1{
-    @include Text($h4,$fw-bold,$white);
+    @include Text($h3,$fw-bold,$white);
     }
   }
   .coursedetail_content {
-    padding-left: $sp-5*3;
-    background-color:red;
-    padding-right: 0;
-    h3 {
+    //  background-color:yellow;
+    padding: $sp-5 $sp-4*4;
+    //padding-right: 0px;
+    .coursedetail_content-top{
+      display: flex;
+      justify-content: space-between;
+      h3 {
       @include Text($h5,$fw-normal,$black);
+      margin: 0;
+      }
+      p{
+        font-style: italic;
+        @include Text($regular,$fw-light,$grey-2);
+        margin: 0;
+        align-self: flex-end;
+      }
     }
+    
     .coursedetail_detail{
-      padding: $sp-4;
-      @include Text($regular,$fw-normal,$black);
+      padding: $sp-4 0;
+      @include Text($regular +2,$fw-normal,$black);
     }
     .related_course{
-      background-color: green;
       border: solid 1px $grey-2;
       background-color: $lightGrey-2;
-      padding: $sp-1;
+      padding: $sp-4;
       h4{
-        padding: $sp-4 0;
-        @include Text($h5,$fw-bold,$black);
+        //padding: $sp-4 0;
+        @include Text($h5,$fw-normal,$black);
+        margin-bottom: $sp-4;
       }
       .related_morecourses{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: $sp-1;
+        grid-gap: $sp-4;
+        .related_morecourses_card_img{
+          img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+          }
+        }
+        .card-body{
+          text-align: center;
+          padding: $sp-1;
+          .related_morecourses_card_title{         
+          @include Text($h5, $fw-bold, $blue);
+          margin: 0;
+          }
+          .rating_stars{
+            margin: $sp-2 0;
+            i{
+              //font-size: $h6;
+               @include Text($h6, $fw-normal, $yellow);
+            }
+          }
+          .btn--red_big {
+            width: 100%;
+            font-size: $regular+2 ;
+          }
+        }
+        
       }
     }
   }
   .coursedetail_card {
-    al
+    
     .coursedetail_card_title{
-      @include Text($h4,$fw-normal,$black)
+      @include Text($h5,$fw-normal,$grey);
+      //margin: $sp-1 0;
+    }
+    .rating_stars{
+      margin: $sp-2 0;
+      i{
+        //font-size: $h6;
+          @include Text($h6, $fw-normal, $yellow);
+      }
     }
     .coursedetail_card_content{
        @include Text($medium,$fw-normal,$black)
     }
     .coursedetail_card_btn{
       font-size: $h6;
-      margin: 0 auto;
-      
+      //margin: $sp-1 auto;
+      width: 100%;
+      outline: none;
       display: block;
     }
   }

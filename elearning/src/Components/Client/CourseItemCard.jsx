@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link, withRouter } from "react-router-dom";
 
 
-export default class CourseItemCard extends Component {
+class CourseItemCard extends Component {
   render() {
     let {course} = this.props
     return (
       <div className="card">
-        <div className='card_img'>
+        <Link className='card_img' to={'/course/' + course.maKhoaHoc}>
           <img className="card-img-top" src={course.hinhAnh} alt="anh khoa hoc" />
-        </div>
+        </Link>
         
         <div className="card-body">
-          <h4 className="card-title">{course.tenKhoaHoc} </h4>
-          <div className="rating d-flex justify-content-between"> {course.danhGia}
+          <h4 className="card-title">{course.tenKhoaHoc.length>13 ? course.tenKhoaHoc.substr(0,13)+"..." : course.tenKhoaHoc} </h4>
+          <div className="rating d-flex justify-content-between"> 
             <div className="rating_stars">
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
@@ -33,3 +34,4 @@ export default class CourseItemCard extends Component {
     )
   }
 }
+export default withRouter(CourseItemCard)

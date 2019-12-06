@@ -10,9 +10,9 @@ class Header extends Component {
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="col-xl-8 col-lg-9 col-md-8 col-sm-6">
             <div className="row">
-              <a className="navbar-brand" href="#index.html">
+              <NavLink className="navbar-brand" to="/">
                 <img src={logo} alt="Logo Udemy" />
-              </a>
+              </NavLink>
               <NavLink className="myNavBar_categories" to='/all-courses'>
                 <i className="fa fa-th  mx-2" />
                 Tất cả khóa học
